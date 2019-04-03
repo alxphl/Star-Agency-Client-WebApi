@@ -47,7 +47,7 @@ export class ActorComponent implements OnInit {
   }
 
   insertRecord(form: NgForm) {
-    this.service.postPaymentDetail().subscribe(
+    this.service.postActorDetail().subscribe(
       res => {
         debugger;
         this.resetForm(form);
@@ -61,10 +61,10 @@ export class ActorComponent implements OnInit {
     )
   }
   updateRecord(form: NgForm) {
-    this.service.putPaymentDetail().subscribe(
+    this.service.putActorDetail().subscribe(
       res => {
         this.resetForm(form);
-        this.toastr.info('Submitted successfully', 'Actor has been registered inside DataBase');
+        this.toastr.info('Submitted successfully', 'Actor has been updated inside DataBase');
         this.service.refreshList();
       },
       err => {

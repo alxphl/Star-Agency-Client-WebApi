@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using WebApi.Models;
 
 namespace WebApi.Controllers
@@ -13,23 +14,25 @@ namespace WebApi.Controllers
     [ApiController]
     public class ActorsController : ControllerBase
     {
+        private readonly ILogger<ActorsController> _log;
         private readonly ActorDetailContext _context;
 
-        public ActorsController(ActorDetailContext context)
+        public ActorsController(ActorDetailContext context,ILogger<ActorsController> log)
         {
             _context = context;
+            _log = log;
         }
 
         // GET: api/ActorDetails
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Actor>>> GetPaymentDetails()
+        public async Task<ActionResult<IEnumerable<Actor>>> Get()
         {
             return await _context.Actors.ToListAsync();
         }
 
         // GET: api/ActorDetails/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Actor>> GetActor(int id)
+        public async Task<ActionResult<Actor>> Get(int id)
         {
             var actorDetail = await _context.Actors.FindAsync(id);
 
@@ -43,7 +46,7 @@ namespace WebApi.Controllers
 
         // PUT: api/ActorDetails/5
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutActor(int id, Actor actorDetail)
+        public async Task<IActionResult> Update(int id, Actor actorDetail)
         {
             if (id != actorDetail.Id)
             {
@@ -73,17 +76,17 @@ namespace WebApi.Controllers
 
         // POST: api/ActorDetails
         [HttpPost]
-        public async Task<ActionResult<Actor>> PostActor(Actor actorDetail)
+        public async Task<ActionResult<Actor>> Create(Actor actorDetail)
         {
             _context.Actors.Add(actorDetail);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetActor", new { id = actorDetail.Id }, actorDetail);
+            return CreatedAtAction("Get", new { id = actorDetail.Id }, actorDetail);
         }
 
         // DELETE: api/ActorDetails/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<Actor>> DeleteActor(int id)
+        public async Task<ActionResult<Actor>> Delete(int id)
         {
             var actorDetail = await _context.Actors.FindAsync(id);
             if (actorDetail == null)

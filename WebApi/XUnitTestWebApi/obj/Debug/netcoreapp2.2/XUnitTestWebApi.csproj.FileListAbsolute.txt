@@ -1,0 +1,14 @@
+D:\StarAgency\StarAgency\WebApi\XUnitTestWebApi\bin\Debug\netcoreapp2.2\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+D:\StarAgency\StarAgency\WebApi\XUnitTestWebApi\bin\Debug\netcoreapp2.2\xunit.runner.reporters.netcoreapp10.dll
+D:\StarAgency\StarAgency\WebApi\XUnitTestWebApi\bin\Debug\netcoreapp2.2\xunit.runner.utility.netcoreapp10.dll
+D:\StarAgency\StarAgency\WebApi\XUnitTestWebApi\bin\Debug\netcoreapp2.2\XUnitTestWebApi.deps.json
+D:\StarAgency\StarAgency\WebApi\XUnitTestWebApi\bin\Debug\netcoreapp2.2\XUnitTestWebApi.runtimeconfig.json
+D:\StarAgency\StarAgency\WebApi\XUnitTestWebApi\bin\Debug\netcoreapp2.2\XUnitTestWebApi.runtimeconfig.dev.json
+D:\StarAgency\StarAgency\WebApi\XUnitTestWebApi\bin\Debug\netcoreapp2.2\XUnitTestWebApi.dll
+D:\StarAgency\StarAgency\WebApi\XUnitTestWebApi\bin\Debug\netcoreapp2.2\WebApi.dll
+D:\StarAgency\StarAgency\WebApi\XUnitTestWebApi\bin\Debug\netcoreapp2.2\WebApi.pdb
+D:\StarAgency\StarAgency\WebApi\XUnitTestWebApi\obj\Debug\netcoreapp2.2\XUnitTestWebApi.csprojAssemblyReference.cache
+D:\StarAgency\StarAgency\WebApi\XUnitTestWebApi\obj\Debug\netcoreapp2.2\XUnitTestWebApi.csproj.CoreCompileInputs.cache
+D:\StarAgency\StarAgency\WebApi\XUnitTestWebApi\obj\Debug\netcoreapp2.2\XUnitTestWebApi.AssemblyInfoInputs.cache
+D:\StarAgency\StarAgency\WebApi\XUnitTestWebApi\obj\Debug\netcoreapp2.2\XUnitTestWebApi.AssemblyInfo.cs
+D:\StarAgency\StarAgency\WebApi\XUnitTestWebApi\obj\Debug\netcoreapp2.2\XUnitTestWebApi.csproj.CopyComplete

@@ -12,13 +12,13 @@ export class ActorService {
 
   constructor(private http: HttpClient) { }
 
-  postPaymentDetail() {
+  postActorDetail() {
     return this.http.post(this.rootURL + '/Actors', this.formData);
   }
-  putPaymentDetail() {
+  putActorDetail() {
     return this.http.put(this.rootURL + '/Actors/'+ this.formData.Id, this.formData);
   }
-  deletePaymentDetail(id) {
+  deleteActorDetail(id) {
     return this.http.delete(this.rootURL + '/Actors/'+ id);
   }
 
