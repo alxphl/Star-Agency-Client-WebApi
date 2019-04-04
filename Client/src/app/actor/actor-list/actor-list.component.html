@@ -1,21 +1,37 @@
 <br>
 <div class="row" >
         <div class="col-xs-12">
-         <!-- <button class="btn btn-success" (click)="onNewRecipe()">New Recipe</button>-->
+ <a href="actors/add">New Actor</a>
         </div>
       </div>
     
       <div class="row">
         <div class="col-xs-12" [ngStyle]="{'background' : 'url(assets/img/bg_06.jpg)'}">
-            <table class="table table-hover"*ngFor="let al of service.list">
-   
-                    <tr >
-                      
-                    <td>{{al.Name}}</td>
-                <td>{{al.Biography}}</td>
-                <td>{{al.Gender}}</td>
-                
-                    </tr>
-                </table>
+            <div *ngFor="let al of service.list">
+              <div   
+              style="cursor: pointer;"
+              [routerLink]="[index]"
+              routerLinkActive="active"
+              class="list-group-item clearfix">
+              <div class="pull-left">
+                <h4 class="list-group-item-heading">{{al.Name}}</h4>
+              
+              </div>
+              <span class="pull-right">
+                    <img
+                    [src]="al.ImagePath"
+                      alt="{{ al.Name }}"
+                      class="img-responsive"
+                      style="max-height: 50px;">
+                  </span>
+                  <p class="list-group-item-text">{{al.Biography}}</p>
+                </div>
+            
+               
+                  </div>
         </div>
       </div>
+      <br>
+      <br>
+      <Br>
+      

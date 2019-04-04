@@ -14,11 +14,11 @@ namespace WebApi.Models
         [Required]
         public string Link { get; set; }
 
-   //     [Display(Name = "Actor")]
- //       public int ActorId { get; set; }
+        [Display(Name = "Actor")]
+        public int ActorId { get; set; }
 
-   //     [ForeignKey("ActorId")]
- //       public virtual Actor Actor { get; set; }
+        [ForeignKey("ActorId")]
+        public virtual Actor Actor { get; set; }
 
         [Required]
         public int Year { get; set; }

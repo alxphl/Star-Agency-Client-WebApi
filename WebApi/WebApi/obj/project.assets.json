@@ -13239,11 +13239,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\StarAgency\\StarAgency\\WebApi\\WebApi\\WebApi.csproj",
+      "projectUniqueName": "D:\\Actors\\StarAgency\\WebApi\\WebApi\\WebApi.csproj",
       "projectName": "WebApi",
-      "projectPath": "D:\\StarAgency\\StarAgency\\WebApi\\WebApi\\WebApi.csproj",
+      "projectPath": "D:\\Actors\\StarAgency\\WebApi\\WebApi\\WebApi.csproj",
       "packagesPath": "C:\\Users\\Developer\\.nuget\\packages\\",
-      "outputPath": "D:\\StarAgency\\StarAgency\\WebApi\\WebApi\\obj\\",
+      "outputPath": "D:\\Actors\\StarAgency\\WebApi\\WebApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

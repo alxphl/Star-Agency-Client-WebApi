@@ -9723,11 +9723,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\StarAgency\\StarAgency\\WebApi\\XUnitTestWebApi\\XUnitTestWebApi.csproj",
+      "projectUniqueName": "D:\\Actors\\StarAgency\\WebApi\\XUnitTestWebApi\\XUnitTestWebApi.csproj",
       "projectName": "XUnitTestWebApi",
-      "projectPath": "D:\\StarAgency\\StarAgency\\WebApi\\XUnitTestWebApi\\XUnitTestWebApi.csproj",
+      "projectPath": "D:\\Actors\\StarAgency\\WebApi\\XUnitTestWebApi\\XUnitTestWebApi.csproj",
       "packagesPath": "C:\\Users\\Developer\\.nuget\\packages\\",
-      "outputPath": "D:\\StarAgency\\StarAgency\\WebApi\\XUnitTestWebApi\\obj\\",
+      "outputPath": "D:\\Actors\\StarAgency\\WebApi\\XUnitTestWebApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -9746,8 +9746,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "D:\\StarAgency\\StarAgency\\WebApi\\WebApi\\WebApi.csproj": {
-              "projectPath": "D:\\StarAgency\\StarAgency\\WebApi\\WebApi\\WebApi.csproj"
+            "D:\\Actors\\StarAgency\\WebApi\\WebApi\\WebApi.csproj": {
+              "projectPath": "D:\\Actors\\StarAgency\\WebApi\\WebApi\\WebApi.csproj"
             }
           }
         }

@@ -12,11 +12,11 @@ namespace WebApi.Models
         [Key]
         public int Id { get; set; }
 
-  //      [Display(Name = "Actor")]
-  //      public int ActorId { get; set; }
+        [Display(Name = "Actor")]
+        public int ActorId { get; set; }
 
-  //      [ForeignKey("ActorId")]
-   //     public virtual Actor Actor { get; set; }
+        [ForeignKey("ActorId")]
+        public virtual Actor Actor { get; set; }
 
         [Required]
         public string ImagePath { get; set; }

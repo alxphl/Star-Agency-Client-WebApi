@@ -1,9 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ActorComponent } from './actor/actor.component';
+import { ActorAddComponent } from './actor/actor-add/actor-add.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
@@ -15,16 +14,21 @@ import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, Mat
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { ActorListComponent } from './actor/actor-list/actor-list.component';
+import { MovieComponent } from './movie/movie.component';
+import { MovieService } from './shared/movie.service';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ActorComponent,
+    ActorAddComponent,
     MainNavComponent,
     HomeComponent,
     ContactComponent,
-    ActorListComponent
+    ActorListComponent,
+    MovieComponent
+   
   ],
   imports: [
     BrowserModule,
@@ -40,7 +44,7 @@ import { ActorListComponent } from './actor/actor-list/actor-list.component';
     MatIconModule,
     MatListModule
   ],
-  providers: [ActorService],
+  providers: [ActorService,MovieService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

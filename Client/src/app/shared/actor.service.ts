@@ -12,7 +12,10 @@ export class ActorService {
 
   constructor(private http: HttpClient) { }
 
+
+
   postActorDetail() {
+    
     return this.http.post(this.rootURL + '/Actors', this.formData);
   }
   putActorDetail() {
@@ -25,6 +28,6 @@ export class ActorService {
   refreshList(){
     this.http.get(this.rootURL + '/Actors')
     .toPromise()
-    .then(res => this.list = res as Actor[]);
+    .then(res => this.list = res as Actor[],movie=>Actor[0].movie);
   }
 }

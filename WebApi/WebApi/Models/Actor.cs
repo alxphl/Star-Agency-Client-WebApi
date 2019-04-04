@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
+using System.Net.Http;
 using System.Threading.Tasks;
 
 namespace WebApi.Models
@@ -19,6 +20,8 @@ namespace WebApi.Models
         [Required]
         [Column(TypeName = "nvarchar(1)")]
         public string Gender { get; set; }
+
+        public string ImagePath { get; set; }
    
     }
 }

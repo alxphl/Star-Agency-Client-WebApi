@@ -26,3 +26,17 @@ D:\StarAgency\StarAgency\WebApi\WebApi\obj\Debug\netcoreapp2.2\WebApi.AssemblyIn
 D:\StarAgency\StarAgency\WebApi\WebApi\obj\Debug\netcoreapp2.2\WebApi.RazorTargetAssemblyInfo.cache
 D:\StarAgency\StarAgency\WebApi\WebApi\obj\Debug\netcoreapp2.2\WebApi.dll
 D:\StarAgency\StarAgency\WebApi\WebApi\obj\Debug\netcoreapp2.2\WebApi.pdb
+D:\Actors\StarAgency\WebApi\WebApi\bin\Debug\netcoreapp2.2\WebApi.deps.json
+D:\Actors\StarAgency\WebApi\WebApi\bin\Debug\netcoreapp2.2\WebApi.runtimeconfig.json
+D:\Actors\StarAgency\WebApi\WebApi\bin\Debug\netcoreapp2.2\WebApi.runtimeconfig.dev.json
+D:\Actors\StarAgency\WebApi\WebApi\bin\Debug\netcoreapp2.2\WebApi.dll
+D:\Actors\StarAgency\WebApi\WebApi\bin\Debug\netcoreapp2.2\WebApi.pdb
+D:\Actors\StarAgency\WebApi\WebApi\obj\Debug\netcoreapp2.2\WebApi.csprojAssemblyReference.cache
+D:\Actors\StarAgency\WebApi\WebApi\obj\Debug\netcoreapp2.2\WebApi.csproj.CoreCompileInputs.cache
+D:\Actors\StarAgency\WebApi\WebApi\obj\Debug\netcoreapp2.2\WebApi.RazorAssemblyInfo.cache
+D:\Actors\StarAgency\WebApi\WebApi\obj\Debug\netcoreapp2.2\WebApi.RazorAssemblyInfo.cs
+D:\Actors\StarAgency\WebApi\WebApi\obj\Debug\netcoreapp2.2\WebApi.AssemblyInfoInputs.cache
+D:\Actors\StarAgency\WebApi\WebApi\obj\Debug\netcoreapp2.2\WebApi.AssemblyInfo.cs
+D:\Actors\StarAgency\WebApi\WebApi\obj\Debug\netcoreapp2.2\WebApi.RazorTargetAssemblyInfo.cache
+D:\Actors\StarAgency\WebApi\WebApi\obj\Debug\netcoreapp2.2\WebApi.dll
+D:\Actors\StarAgency\WebApi\WebApi\obj\Debug\netcoreapp2.2\WebApi.pdb
