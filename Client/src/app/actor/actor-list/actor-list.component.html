@@ -12,10 +12,10 @@
               style="cursor: pointer;"
               [routerLink]="[index]"
               routerLinkActive="active"
-              class="list-group-item clearfix">
+              class="list-group-item clearfix"  [ngStyle]="{'background' : 'url(assets/img/bg_06.jpg)'}">
               <div class="pull-left">
                 <h4 class="list-group-item-heading">{{al.Name}}</h4>
-              
+           
               </div>
               <span class="pull-right">
                     <img
@@ -23,7 +23,7 @@
                       alt="{{ al.Name }}"
                       class="img-responsive"
                       style="max-height: 50px;">
-                  </span>
+                  </span><br>
                   <p class="list-group-item-text">{{al.Biography}}</p>
                 </div>
             

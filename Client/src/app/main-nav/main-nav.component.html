@@ -12,7 +12,7 @@
        >
       <mat-toolbar [ngStyle]="{'background' : 'url(assets/img/bg_01.gif)'}" >Menu</mat-toolbar>
       <mat-nav-list [ngStyle]="{'background' : 'url(assets/img/bg_01.gif)'}">
-        <a mat-list-item href="/home">Home</a>
+      <!--  <a mat-list-item href="/home">Home</a>-->
         <a mat-list-item href="/actors">Actors</a>
         <a mat-list-item href="/movie-list">Movie List</a>
         <a mat-list-item href="/contact">Contact</a>
@@ -31,8 +31,8 @@
         <span></span>
         <span class="spacer">   </span>
       
-        <a [ngClass]="{hidden:(isHandset$|async)}" href="/home">Home      </a>
-        <span class="spacer">   </span>
+       <!-- <a [ngClass]="{hidden:(isHandset$|async)}" href="/home">Home      </a>
+        <span class="spacer">   </span>-->
         <a [ngClass]="{hidden:(isHandset$|async)}" href="/actors">Actor       </a>
         <span class="spacer">   </span>
        <a  [ngClass]="{hidden:(isHandset$|async)}" href="/movie-list">Movie List       </a>

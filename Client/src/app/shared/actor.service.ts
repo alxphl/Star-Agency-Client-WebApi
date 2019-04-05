@@ -13,6 +13,9 @@ export class ActorService {
   constructor(private http: HttpClient) { }
 
 
+  getActor(id){
+    return this.http.get(this.rootURL + '/Actors/'+ id);
+  }
 
   postActorDetail() {
     
@@ -28,6 +31,6 @@ export class ActorService {
   refreshList(){
     this.http.get(this.rootURL + '/Actors')
     .toPromise()
-    .then(res => this.list = res as Actor[],movie=>Actor[0].movie);
+    .then(res => this.list = res as Actor[]);
   }
 }

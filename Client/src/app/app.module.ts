@@ -16,6 +16,8 @@ import { ContactComponent } from './contact/contact.component';
 import { ActorListComponent } from './actor/actor-list/actor-list.component';
 import { MovieComponent } from './movie/movie.component';
 import { MovieService } from './shared/movie.service';
+import {AlertModule} from 'ngx-bootstrap';
+import { ActorDetailComponent } from './actor/actor-detail/actor-detail.component';
 
 
 
@@ -27,7 +29,8 @@ import { MovieService } from './shared/movie.service';
     HomeComponent,
     ContactComponent,
     ActorListComponent,
-    MovieComponent
+    MovieComponent,
+    ActorDetailComponent
    
   ],
   imports: [
@@ -42,7 +45,8 @@ import { MovieService } from './shared/movie.service';
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    AlertModule.forRoot()
   ],
   providers: [ActorService,MovieService],
   bootstrap: [AppComponent]
