@@ -1,0 +1,11 @@
+<div *ngIf="token==null">
+    <a [ngClass]="{hidden:(isHandset$|async)}"  href="/user/login">Log In  </a>
+    <span class="spacer">  / </span>
+    <a [ngClass]="{hidden:(isHandset$|async)}"  href="/user/registration">  Register      </a>
+    <span class="spacer">   </span>
+  </div>
+  <div *ngIf="token!=null">
+      <span></span>
+      <a [ngClass]="{hidden:(isHandset$|async)}" (click)="onLogout()"  href="">Log Out  </a>
+    <span class="spacer">   </span>
+  </div>

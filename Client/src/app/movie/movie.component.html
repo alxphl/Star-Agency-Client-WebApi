@@ -1,0 +1,29 @@
+<br>
+<div class="row" >
+        <div class="col-xs-12">
+            <button class="btn btn-warning"><a href="movie/add">New Movie</a></button>
+        </div>
+      </div>
+    
+      <div class="row">
+        <div class="col-md-6" [ngStyle]="{'background' : 'url(assets/img/bg_06.jpg)'}">
+        
+          <table class="table table-hover"*ngFor="let mv of service.list">
+             
+                    <tr >
+                      
+                    <td>{{mv.Name}}</td>
+                <td><a href="{{mv.Link}}">Link To Movie </a></td>
+                <td>{{mv.Year}}</td>
+               <td >
+    
+               </td>
+                
+                    </tr>
+                </table>
+        </div>
+      </div>
+      <br>
+      <br>
+      <Br>
+      
