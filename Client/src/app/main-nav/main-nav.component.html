@@ -16,6 +16,7 @@
         <a mat-list-item href="/actors">Actors</a>
         <a mat-list-item href="/movie-list">Movie List</a>
         <a mat-list-item href="/contact">Contact</a>
+        <app-log-nav></app-log-nav>
       </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content>
@@ -30,18 +31,15 @@
         </button>
         <span></span>
         <span class="spacer">   </span>
-      
-       <!-- <a [ngClass]="{hidden:(isHandset$|async)}" href="/home">Home      </a>
-        <span class="spacer">   </span>-->
         <a [ngClass]="{hidden:(isHandset$|async)}" href="/actors">Actor       </a>
         <span class="spacer">   </span>
        <a  [ngClass]="{hidden:(isHandset$|async)}" href="/movie-list">Movie List       </a>
-      
         <span class="spacer">   </span>
           <a [ngClass]="{hidden:(isHandset$|async)}"  href="/contact">Contact       </a>
         <span class="spacer">   </span>
-    
-  
+        <div  [ngClass]="{hidden:(isHandset$|async)}" >
+            <app-log-nav></app-log-nav>
+        </div>
       </mat-toolbar>
       <!-- Add Content Here -->
       <ng-content></ng-content>
