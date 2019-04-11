@@ -24,6 +24,8 @@ import { LoginComponent } from './user/login/login.component';
 import { UserService } from './shared/user.service';
 import { AuthInterceptor } from './auth/auth.interceptor';
 import { LogNavComponent } from './log-nav/log-nav.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 
 
@@ -59,7 +61,8 @@ import { LogNavComponent } from './log-nav/log-nav.component';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
-    AlertModule.forRoot()
+    AlertModule.forRoot(),
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [ActorService,MovieService,UserService,{
     provide:HTTP_INTERCEPTORS,

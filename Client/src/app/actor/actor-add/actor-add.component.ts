@@ -9,7 +9,7 @@ import { ActorService } from '../../shared/actor.service';
 })
 export class ActorAddComponent implements OnInit {
 
-  constructor(private service:ActorService, private toastr:ToastrService) { }
+  constructor(public service:ActorService, private toastr:ToastrService) { }
 
   ngOnInit() {
     this.resetForm();

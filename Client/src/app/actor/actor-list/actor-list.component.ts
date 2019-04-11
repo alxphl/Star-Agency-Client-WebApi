@@ -9,7 +9,7 @@ import{Component,OnInit} from '@angular/core';
 export class ActorListComponent implements OnInit{
     
    
-    constructor(private service:ActorService) {
+    constructor(public service:ActorService) {
       
         
     }

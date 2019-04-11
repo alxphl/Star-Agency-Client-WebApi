@@ -13,7 +13,7 @@ export class ActorDetailComponent implements OnInit {
    actor;
   id: number;
 
-  constructor(private actorService: ActorService,
+  constructor(public actorService: ActorService,
               private route: ActivatedRoute,
               private router: Router) {
   }

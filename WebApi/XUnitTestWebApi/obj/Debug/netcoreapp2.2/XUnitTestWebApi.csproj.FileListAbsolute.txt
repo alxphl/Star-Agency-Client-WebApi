@@ -20,10 +20,8 @@ D:\Actors\StarAgency\WebApi\XUnitTestWebApi\bin\Debug\netcoreapp2.2\XUnitTestWeb
 D:\Actors\StarAgency\WebApi\XUnitTestWebApi\bin\Debug\netcoreapp2.2\XUnitTestWebApi.runtimeconfig.dev.json
 D:\Actors\StarAgency\WebApi\XUnitTestWebApi\bin\Debug\netcoreapp2.2\XUnitTestWebApi.dll
 D:\Actors\StarAgency\WebApi\XUnitTestWebApi\bin\Debug\netcoreapp2.2\XUnitTestWebApi.pdb
-D:\Actors\StarAgency\WebApi\XUnitTestWebApi\bin\Debug\netcoreapp2.2\Microsoft.AspNetCore.Mvc.Core.dll
 D:\Actors\StarAgency\WebApi\XUnitTestWebApi\bin\Debug\netcoreapp2.2\WebApi.dll
 D:\Actors\StarAgency\WebApi\XUnitTestWebApi\bin\Debug\netcoreapp2.2\WebApi.pdb
-D:\Actors\StarAgency\WebApi\XUnitTestWebApi\bin\Debug\netcoreapp2.2\Microsoft.AspNetCore.Mvc.Core.xml
 D:\Actors\StarAgency\WebApi\XUnitTestWebApi\obj\Debug\netcoreapp2.2\XUnitTestWebApi.csprojAssemblyReference.cache
 D:\Actors\StarAgency\WebApi\XUnitTestWebApi\obj\Debug\netcoreapp2.2\XUnitTestWebApi.csproj.CoreCompileInputs.cache
 D:\Actors\StarAgency\WebApi\XUnitTestWebApi\obj\Debug\netcoreapp2.2\XUnitTestWebApi.AssemblyInfoInputs.cache

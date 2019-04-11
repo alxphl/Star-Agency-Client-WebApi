@@ -9,7 +9,7 @@ import { MovieService } from '../shared/movie.service';
 })
 export class MovieComponent implements OnInit {
 
-  constructor(private service:MovieService, private toastr:ToastrService) { }
+  constructor(public service:MovieService, private toastr:ToastrService) { }
 
   ngOnInit() {
     this.resetForm();
