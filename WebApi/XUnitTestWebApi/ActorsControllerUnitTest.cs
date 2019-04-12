@@ -25,7 +25,7 @@ namespace WebApi.xUnitTests
 
             // Act
 
-            var notFoundResult = controller.Get(39);
+            var notFoundResult = controller.Get(278);
             dbContext.Dispose();
 
             // Assert
@@ -54,26 +54,7 @@ namespace WebApi.xUnitTests
 
 
         }
-        [Fact]
-        public async Task TestGet()
-
-        {
-            // Arrange
-
-            var dbContext = DbContextMocker.GetActorDetailContext(nameof(TestGet));
-            var controller = new ActorsController(dbContext, _log);
-
-            // Act
-
-            var ActorResult = controller.Get();
-            dbContext.Dispose();
-
-            // Assert
-
-            Assert.Equal(7,ActorResult.Result.Value.Count());
-
-
-        }
+      
         [Fact]
         public async Task TestDelete()
         {
@@ -81,7 +62,7 @@ namespace WebApi.xUnitTests
             var dbContext = DbContextMocker.GetActorDetailContext(nameof(TestDelete));
             var controller = new ActorsController(dbContext, _log);
             var id = 5;
-
+          
             // Act
             var response = await controller.Delete(id);
            
@@ -94,13 +75,13 @@ namespace WebApi.xUnitTests
         public async Task TestCreate()
         {
             // Arrange
-            var dbContext = DbContextMocker.GetActorDetailContext(nameof(TestDelete));
+            var dbContext = DbContextMocker.GetActorDetailContext(nameof(TestCreate));
             var controller = new ActorsController(dbContext, _log);
-            var actor = new Actor() {Name = "Test",Biography = "TestBio",Gender = "f",ImagePath = "image/test.test"};
+            var actor = new Actor() { Name = "Test", Biography = "TestBio", Gender = "f", ImagePath = "image/test.test" };
 
             // Act
             var response = await controller.Create(actor);
-            var ActorResult = controller.Get(15);
+            var ActorResult = controller.Get(29);
             dbContext.Dispose();
 
             // Assert
@@ -122,6 +103,28 @@ namespace WebApi.xUnitTests
 
             // Assert
             Assert.NotSame(ActorResultBefore,ActorResultAfter);
+        }
+        [Fact]
+        public async Task TestGet()
+
+        {
+            // Arrange
+
+            var dbContext = DbContextMocker.GetActorDetailContext(nameof(TestGet));
+       
+
+            var controller = new ActorsController(dbContext, _log);
+
+            // Act
+
+            var ActorResult = controller.Get();
+            dbContext.Dispose();
+
+            // Assert
+
+            Assert.NotNull(ActorResult);
+
+
         }
     }
 }

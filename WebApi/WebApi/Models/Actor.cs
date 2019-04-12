@@ -22,6 +22,10 @@ namespace WebApi.Models
         public string Gender { get; set; }
 
         public string ImagePath { get; set; }
+
+        public List<Movie> Movies { get; set; }
+       
+    
    
     }
 }
