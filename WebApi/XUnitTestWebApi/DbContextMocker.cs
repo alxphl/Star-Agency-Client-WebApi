@@ -13,7 +13,7 @@ namespace WebApi.xUnitTests
         {
             // Create options for DbContext instance
             var options = new DbContextOptionsBuilder<ActorDetailContext>()
-                .UseInMemoryDatabase(databaseName: dbName)
+                .UseInMemoryDatabase("dbName")
                 .Options;
 
             // Create instance of DbContext

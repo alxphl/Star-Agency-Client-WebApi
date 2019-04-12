@@ -10,7 +10,7 @@ import { ActorService } from '../../shared/actor.service';
   styleUrls: ['./actor-detail.component.css']
 })
 export class ActorDetailComponent implements OnInit {
-   actor;
+   actor
   id: number;
 
   constructor(public actorService: ActorService,
@@ -23,7 +23,8 @@ export class ActorDetailComponent implements OnInit {
       .subscribe(
         (params: Params) => {
           this.id = +params['id'];
-          this.actor = this.actorService.getActor(this.id);
+        this.actor= this.actorService.getActor(this.id);
+        return this.actor;
         }
       );
   }

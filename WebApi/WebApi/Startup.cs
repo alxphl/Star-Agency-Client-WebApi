@@ -86,7 +86,7 @@ namespace WebApi
             }
 
             loggerFactory.AddFile("D:/Actors/StarAgency/Logs/Logs.txt");
-            app.UseCors(options => options.WithOrigins("http://localhost:8000")
+            app.UseCors(options => options.WithOrigins("http://localhost:4200")
                 .AllowAnyMethod()
                 .AllowAnyHeader());
             app.UseAuthentication();
