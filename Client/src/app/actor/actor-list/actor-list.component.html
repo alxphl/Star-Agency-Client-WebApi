@@ -1,19 +1,23 @@
 <br>
 <div class="row" >
         <div class="col-xs-12">
- <button class="btn btn-warning"><a href="actors/add">New Actor</a></button>
+            <a href="actors/add"> <button class="btn btn-warning">New Actor</button></a>
         </div>
       </div>
     
       <div class="row col-lg-6">
         <div class="col-xs-12" [ngStyle]="{'background' : 'url(assets/img/bg_06.jpg)'}">
-            <div *ngFor="let al of service.list">
+            <div *ngFor="let al of service.list" routerLink="/actors/{{al.Id}}">
               <div   
               style="cursor: pointer;"
-              [routerLink]="[index]"
+              routerLink="/actors/{{al.Id}}"
               routerLinkActive="active"
-              class="list-group-item clearfix"  [ngStyle]="{'background' : 'url(assets/img/bg_06.jpg)'}">
+              
+              class="list-group-item clearfix"  [ngStyle]="{'background' : 'url(assets/img/bg_06.jpg)'}"
+             
+              >
               <div class="pull-left">
+                
                 <h4 class="list-group-item-heading">{{al.Name}}</h4>
            
               </div>
@@ -28,7 +32,7 @@
                   <p class="list-group-item-text">{{al.Biography}}</p>
                 
                 </div>
-            
+           
                
                   </div>
         </div>

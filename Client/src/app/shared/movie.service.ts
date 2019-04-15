@@ -27,4 +27,8 @@ export class MovieService {
     .toPromise()
     .then(res => this.list = res as Movie[]);
   }
+  getMovie(index: number) {
+    return this.http.get(this.rootURL+'/Movies'+index);
+  }
+
 }

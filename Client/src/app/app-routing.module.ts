@@ -9,13 +9,17 @@ import { ActorDetailComponent } from './actor/actor-detail/actor-detail.componen
 import { RegistrationComponent } from './user/registration/registration.component';
 import { LoginComponent } from './user/login/login.component';
 import { AuthGuard } from './auth/auth.guard';
+import { ActorEditComponent } from './actor/actor-edit/actor-edit.component';
 
 const routes: Routes =[
   { path: '', redirectTo: '/actors', pathMatch: 'full' },
-  { path: 'actors', component: ActorListComponent},
-  
-    { path: 'actors/:id', component: ActorDetailComponent },
-    { path: 'actors/add', component: ActorAddComponent,canActivate:[AuthGuard] },
+  { path: 'actors', component: ActorListComponent},/*children:[
+    { path: ':id', component: ActorDetailComponent },
+    { path: 'add', component: ActorAddComponent,canActivate:[AuthGuard] },
+  ]},*/
+  { path: 'actors/add', component: ActorAddComponent },
+  { path: 'actors/:id', component: ActorDetailComponent },
+  {path:'actors/edit/:id',component:ActorEditComponent},
 
   { path: 'contact', component: ContactComponent },
   { path: 'movie-list', component: MovieComponent,canActivate:[AuthGuard] },

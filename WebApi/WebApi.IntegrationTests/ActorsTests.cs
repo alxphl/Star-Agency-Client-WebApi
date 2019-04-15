@@ -17,21 +17,21 @@ namespace WebApi.IntegrationTests
         {
             Client = fixture.Client;
         }
-
-    //    [Fact]
-      //  public async Task TestGet()
-     //   {
+/*
+        [Fact]
+        public async Task TestGet()
+       {
            // Arrange
-      //    var result= await Client.GetAsync("http://localhost:51624/api/Actors").IsCompletedSuccessfully;
-           // var request = "http://localhost:51624/api/Actors";
+          var result= await Client.GetAsync("http://localhost:51624/api/Actors");
+            var request = "http://localhost:51624/api/Actors";
 
             // Act
-          //  var response = await Client.GetAsync(request);
+            var response = await Client.GetAsync(request);
    
             // Assert
-          //  response.EnsureSuccessStatusCode();
+            response.EnsureSuccessStatusCode();
      
-     //   }
+        }*/
 
         /*   [Fact]
          public async Task Index_Get_ReturnsIndexHtmlPage_ListingEveryArticle()

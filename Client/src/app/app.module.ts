@@ -26,6 +26,8 @@ import { AuthInterceptor } from './auth/auth.interceptor';
 import { LogNavComponent } from './log-nav/log-nav.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { DropdownDirective } from './shared/dropdown.directive';
+import { ActorEditComponent } from './actor/actor-edit/actor-edit.component';
 
 
 
@@ -42,7 +44,10 @@ import { environment } from '../environments/environment';
     UserComponent,
     RegistrationComponent,
     LoginComponent,
-    LogNavComponent
+    LogNavComponent,
+    DropdownDirective,
+    ActorEditComponent,
+    
    
   ],
   imports: [

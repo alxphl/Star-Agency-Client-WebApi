@@ -1,4 +1,4 @@
-<div  [ngStyle]="{'background' : 'url(assets/img/bg_06.jpg)'}">
+<div class="col-xs-12"  [ngStyle]="{'background' : 'url(assets/img/bg_06.jpg)'}" class="pull-right">
     <div class="row">
         <div class="col-xs-12">
           <img
@@ -24,8 +24,8 @@
               Manage actor <span class="caret"></span>
             </button>
             <ul class="dropdown-menu">
-              <li><a style="cursor: pointer;" >Edit Actor</a></li>
-              <li><a style="cursor: pointer;" >Delete Actor</a></li>
+              <li><a style="cursor: pointer;" routerLink="/actors/edit/{{actor.Id}}">Edit Actor</a></li>
+              <li><a style="cursor: pointer;" (click)="OnDelete(actor.Id)">Delete Actor</a></li>
             </ul>
           </div>
         </div>
@@ -46,4 +46,7 @@
           </ul>
         </div>
       </div>
+      <br>
+      <Br>
+        <Br>
     </div>

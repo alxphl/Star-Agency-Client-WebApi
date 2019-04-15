@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import {ToastrService} from'ngx-toastr';
 import { ActorService } from '../../shared/actor.service';
+import{Actor} from'../../shared/actor.model';
+import { ActivatedRoute, Params, Router } from '@angular/router';
 @Component({
   selector: 'app-actor-add',
   templateUrl: './actor-add.component.html',
@@ -9,10 +11,11 @@ import { ActorService } from '../../shared/actor.service';
 })
 export class ActorAddComponent implements OnInit {
 
-  constructor(public service:ActorService, private toastr:ToastrService) { }
+  constructor(  private route: ActivatedRoute,public service:ActorService, private toastr:ToastrService) { }
 
   ngOnInit() {
     this.resetForm();
+ 
   }
 
   resetForm(form?: NgForm) {

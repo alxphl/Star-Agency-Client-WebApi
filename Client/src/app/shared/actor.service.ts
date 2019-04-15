@@ -13,15 +13,17 @@ export class ActorService {
   constructor(private http: HttpClient) { }
 
 
-  getActor(id){
-    return this.http.get(this.rootURL + '/Actors/'+ id);
+  getActor(id:number){
+//console.log(this.http.get(this.rootURL + '/Actors/' + id).toPromise());
+     return this.http.get(this.rootURL + '/Actors/' + id);
+  
   }
 
-  postActorDetail() {
+  postActorDetail(formData) {
     
     return this.http.post(this.rootURL + '/Actors', this.formData);
   }
-  putActorDetail() {
+  putActorDetail(id,formData) {
     return this.http.put(this.rootURL + '/Actors/'+ this.formData.Id, this.formData);
   }
   deleteActorDetail(id) {
