@@ -40,18 +40,19 @@ namespace WebApi.Controllers
 
             return movie;
         }
-     /*   [HttpGet("{id}")]
+        [HttpGet("{id}")]
+        [Route("Actor/{id}")]
         public async Task<ActionResult<Movie>> GetMovieByActorId(int id)
         {
-            var movie =  _context.Movies.Where(p=>p.ActorId==id);
+            var movie =   _context.Movies.Where(p=>p.ActorId==id);
 
             if (movie == null)
             {
                 return NotFound();
             }
 
-           return movie;
-        }*/
+           return (Movie) movie;
+        }
         // PUT: api/Movies/5
         [HttpPut("{id}")]
         public async Task<IActionResult> PutMovie(int id, Movie movie)

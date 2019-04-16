@@ -10,6 +10,7 @@ import { RegistrationComponent } from './user/registration/registration.componen
 import { LoginComponent } from './user/login/login.component';
 import { AuthGuard } from './auth/auth.guard';
 import { ActorEditComponent } from './actor/actor-edit/actor-edit.component';
+import { ActorDeleteComponent } from './actor/actor-delete/actor-delete.component';
 
 const routes: Routes =[
   { path: '', redirectTo: '/actors', pathMatch: 'full' },
@@ -18,8 +19,9 @@ const routes: Routes =[
     { path: 'add', component: ActorAddComponent,canActivate:[AuthGuard] },
   ]},*/
   { path: 'actors/add', component: ActorAddComponent },
-  { path: 'actors/:id', component: ActorDetailComponent },
-  {path:'actors/edit/:id',component:ActorEditComponent},
+  { path: 'actors/:id', component: ActorDetailComponent,canActivate:[AuthGuard] },
+  {path:'actors/edit/:id',component:ActorEditComponent,canActivate:[AuthGuard]},
+  {path:'actors/delete/:id',component:ActorDeleteComponent,canActivate:[AuthGuard]},
 
   { path: 'contact', component: ContactComponent },
   { path: 'movie-list', component: MovieComponent,canActivate:[AuthGuard] },

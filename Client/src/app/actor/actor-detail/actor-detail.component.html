@@ -25,7 +25,7 @@
             </button>
             <ul class="dropdown-menu">
               <li><a style="cursor: pointer;" routerLink="/actors/edit/{{actor.Id}}">Edit Actor</a></li>
-              <li><a style="cursor: pointer;" (click)="OnDelete(actor.Id)">Delete Actor</a></li>
+              <li><a style="cursor: pointer;"  routerLink="/actors/delete/{{actor.Id}}">Delete Actor</a></li>
             </ul>
           </div>
         </div>
@@ -38,15 +38,13 @@
       <div class="row">
         <div class="col-xs-12">
           <ul class="list-group">
-          <!--  <li  [ngStyle]="{'background' : 'url(assets/img/bg_06.jpg)'}"
+           <li  [ngStyle]="{'background' : 'url(assets/img/bg_06.jpg)'}"
               class="list-group-item"
               *ngFor="let movie of actor.movies">
               {{ movie.Name }} - {{ movie.Year }} <a href="{{movie.Link}}">Link</a> 
-            </li>-->
+            </li>
           </ul>
         </div>
       </div>
-      <br>
-      <Br>
-        <Br>
+      <br><br><br>
     </div>

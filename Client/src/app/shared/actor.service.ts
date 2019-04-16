@@ -19,14 +19,29 @@ export class ActorService {
   
   }
 
-  postActorDetail(formData) {
+  postActorDetail() {
     
     return this.http.post(this.rootURL + '/Actors', this.formData);
   }
-  putActorDetail(id,formData) {
-    return this.http.put(this.rootURL + '/Actors/'+ this.formData.Id, this.formData);
+  putActorDetail() {
+    return this.http.put(this.rootURL + '/Actors/'+ this.formData.Id,this.formData, {headers:{'Content-Type':'application/json'}}).subscribe(
+
+      data  => {
+      
+      console.log("PUT Request is successful ", data);
+      
+      },
+      
+      error  => {
+      
+      console.log("Error", error);
+      
+      }
+      
+      );;
   }
-  deleteActorDetail(id) {
+  deleteActorDetail(id:number) {
+    console.log("about to delete actor with id:"+id)
     return this.http.delete(this.rootURL + '/Actors/'+ id);
   }
 

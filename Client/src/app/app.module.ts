@@ -28,6 +28,7 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { DropdownDirective } from './shared/dropdown.directive';
 import { ActorEditComponent } from './actor/actor-edit/actor-edit.component';
+import { ActorDeleteComponent } from './actor/actor-delete/actor-delete.component';
 
 
 
@@ -47,6 +48,7 @@ import { ActorEditComponent } from './actor/actor-edit/actor-edit.component';
     LogNavComponent,
     DropdownDirective,
     ActorEditComponent,
+    ActorDeleteComponent,
     
    
   ],
@@ -57,6 +59,7 @@ import { ActorEditComponent } from './actor/actor-edit/actor-edit.component';
     ReactiveFormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    ReactiveFormsModule,
     ToastrModule.forRoot({
       progressBar:true
     }),

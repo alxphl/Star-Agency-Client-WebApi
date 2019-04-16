@@ -14,7 +14,7 @@ export class ActorDetailComponent implements OnInit {
   id: number;
   
 
-  constructor(public actorService: ActorService,
+ public constructor(public actorService: ActorService,
               private route: ActivatedRoute,
               private router: Router) {
   }
@@ -35,9 +35,10 @@ export class ActorDetailComponent implements OnInit {
       
    
   }
-   onDelete=function(id) {
-    this.actorService.deleteActorDetail(this.id);
-    this.router.navigate(['/actors']);
+  public onDelete(id) {
+  
+    
+    this.router.navigate(['/actors/delete:id']);
   }
   onEdit(){
     this.router.navigate(['/actors/edit:id']);

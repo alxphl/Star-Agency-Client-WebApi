@@ -86,6 +86,7 @@ namespace WebApi.Controllers
 
         // DELETE: api/ActorDetails/5
         [HttpDelete("{id}")]
+     //   [Route("Delete/:{id}")]
         public async Task<ActionResult<Actor>> Delete(int id)
         {
             var actorDetail = await _context.Actors.FindAsync(id);
