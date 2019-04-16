@@ -29,6 +29,9 @@ import { environment } from '../environments/environment';
 import { DropdownDirective } from './shared/dropdown.directive';
 import { ActorEditComponent } from './actor/actor-edit/actor-edit.component';
 import { ActorDeleteComponent } from './actor/actor-delete/actor-delete.component';
+import { MovieDetailComponent } from './movie/movie-detail/movie-detail.component';
+import { MovieDeleteComponent } from './movie/movie-delete/movie-delete.component';
+import { MovieEditComponent } from './movie/movie-edit/movie-edit.component';
 
 
 
@@ -49,6 +52,9 @@ import { ActorDeleteComponent } from './actor/actor-delete/actor-delete.componen
     DropdownDirective,
     ActorEditComponent,
     ActorDeleteComponent,
+    MovieDetailComponent,
+    MovieDeleteComponent,
+    MovieEditComponent,
     
    
   ],

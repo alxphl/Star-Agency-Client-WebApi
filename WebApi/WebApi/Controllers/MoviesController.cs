@@ -29,6 +29,7 @@ namespace WebApi.Controllers
 
         // GET: api/Movies/5
         [HttpGet("{id}")]
+        [Route("Movie/{id}")]
         public async Task<ActionResult<Movie>> GetMovie(int id)
         {
             var movie = await _context.Movies.FindAsync(id);

@@ -41,7 +41,6 @@ export class ActorService {
       );;
   }
   deleteActorDetail(id:number) {
-    console.log("about to delete actor with id:"+id)
     return this.http.delete(this.rootURL + '/Actors/'+ id);
   }
 

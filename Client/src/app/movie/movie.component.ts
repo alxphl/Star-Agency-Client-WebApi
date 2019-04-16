@@ -26,6 +26,7 @@ export class MovieComponent implements OnInit {
         Name:'',
         Link:'',
         Year:0,
+        ActorId:0
      
       
     
@@ -54,7 +55,7 @@ export class MovieComponent implements OnInit {
     )
   }
   updateRecord(form: NgForm) {
-    this.service.putMovieDetail().subscribe(
+   /* this.service.putMovieDetail().subscribe(
       res => {
         this.resetForm(form);
         this.toastr.info('Submitted successfully', 'Movie has been changed inside DataBase');
@@ -63,7 +64,7 @@ export class MovieComponent implements OnInit {
       err => {
         console.log(err);
       }
-    )
+    )*/
   }
 
 }

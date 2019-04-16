@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import {ToastrService} from'ngx-toastr';
 import { ActorService } from '../../shared/actor.service';
-import { ActivatedRoute, Params} from '@angular/router';
+import { ActivatedRoute, Params, Router} from '@angular/router';
 @Component({
   selector: 'app-actor-edit',
   templateUrl: './actor-edit.component.html',
@@ -10,7 +10,7 @@ import { ActivatedRoute, Params} from '@angular/router';
 })
 export class ActorEditComponent implements OnInit {
 id:number;
-  constructor(  private route: ActivatedRoute,public service:ActorService, private toastr:ToastrService) { }
+  constructor( private router:Router, private route: ActivatedRoute,public service:ActorService, private toastr:ToastrService) { }
 
   ngOnInit() {
     this.route.params
@@ -36,6 +36,7 @@ id:number;
         Name:'',
         Link:'',
         Year:0,
+        ActorId:0
        
      
       }]
@@ -50,6 +51,7 @@ id:number;
 
   updateRecord(form: NgForm) {
     this.service.putActorDetail()
+    this.router.navigate(['/actors']);
     
   }
 

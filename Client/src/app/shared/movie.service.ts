@@ -16,7 +16,21 @@ export class MovieService {
     return this.http.post(this.rootURL + '/Movies', this.formData);
   }
   putMovieDetail() {
-    return this.http.put(this.rootURL + '/Movies/'+ this.formData.Id, this.formData);
+    return this.http.put(this.rootURL + '/Movies/'+ this.formData.Id, this.formData, {headers:{'Content-Type':'application/json'}}).subscribe(
+
+      data  => {
+      
+      console.log("PUT Request is successful ", data);
+      
+      },
+      
+      error  => {
+      
+      console.log("Error", error);
+      
+      }
+      
+      );;
   }
   deleteMovieDetail(id) {
     return this.http.delete(this.rootURL + '/Movies/'+ id);
@@ -28,7 +42,7 @@ export class MovieService {
     .then(res => this.list = res as Movie[]);
   }
   getMovie(index: number) {
-    return this.http.get(this.rootURL+'/Movies'+index);
+    return this.http.get(this.rootURL+'/Movies/Movie/'+index);
   }
 
   getMoviesByActorId(id:number){
