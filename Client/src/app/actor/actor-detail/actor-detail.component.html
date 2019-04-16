@@ -40,7 +40,7 @@
           <ul class="list-group">
            <li  [ngStyle]="{'background' : 'url(assets/img/bg_06.jpg)'}"
               class="list-group-item"
-              *ngFor="let movie of actor.movies">
+              *ngFor="let movie of movieList">
               {{ movie.Name }} - {{ movie.Year }} <a href="{{movie.Link}}">Link</a> 
             </li>
           </ul>

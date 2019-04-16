@@ -31,4 +31,8 @@ export class MovieService {
     return this.http.get(this.rootURL+'/Movies'+index);
   }
 
+  getMoviesByActorId(id:number){
+    return this.http.get(this.rootURL+'/Movies/Actor/'+id);
+  }
+
 }
