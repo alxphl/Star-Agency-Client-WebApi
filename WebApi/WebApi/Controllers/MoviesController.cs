@@ -42,16 +42,11 @@ namespace WebApi.Controllers
         }
         [HttpGet("{id}")]
         [Route("Actor/{id}")]
-        public async Task<ActionResult<Movie>> GetMovieByActorId(int id)
-        {
-            var movie =   _context.Movies.Where(p=>p.ActorId==id);
-
-            if (movie == null)
-            {
-                return NotFound();
-            }
-
-           return (Movie) movie;
+        public async Task<ActionResult<IEnumerable<Movie>>> GetMovieByActorId(int id)
+        {   
+             var movieList=   await _context.Movies.ToListAsync();
+             var movies= movieList.FindAll(c => c.ActorId == id);
+             return movies;
         }
         // PUT: api/Movies/5
         [HttpPut("{id}")]
