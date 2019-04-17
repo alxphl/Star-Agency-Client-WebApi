@@ -5,7 +5,7 @@ import { UserService } from '../shared/user.service';
 @Component({
   selector: 'app-log-nav',
   templateUrl: './log-nav.component.html',
-  styles: []
+  styles: ['a {  color: black;  text-decoration: none;  }' ]
 })
 export class LogNavComponent implements OnInit {
   userDetails

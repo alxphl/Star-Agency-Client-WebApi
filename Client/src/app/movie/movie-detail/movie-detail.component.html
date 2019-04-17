@@ -15,8 +15,8 @@
             Manage Movie <span class="caret"></span>
           </button>
           <ul class="dropdown-menu">
-            <li><a style="cursor: pointer;" routerLink="/movie-list/edit/{{movie.Id}}">Edit Movie</a></li>
-            <li><a style="cursor: pointer;"  routerLink="/movie-list/delete/{{movie.Id}}">Delete Movie</a></li>
+            <li><a style="cursor: pointer;"   [ngStyle]="{'background' : 'url(assets/img/bg_06.jpg)'}" routerLink="/movie-list/edit/{{movie.Id}}">Edit Movie</a></li>
+            <li><a style="cursor: pointer;"  [ngStyle]="{'background' : 'url(assets/img/bg_06.jpg)'}" routerLink="/movie-list/delete/{{movie.Id}}">Delete Movie</a></li>
           </ul>
         </div>
       </div>

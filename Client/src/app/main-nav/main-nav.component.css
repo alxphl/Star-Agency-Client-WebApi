@@ -26,3 +26,7 @@
 font-color{
   color:wheat;
 }
+a {
+  color: black;
+  text-decoration: none;
+}
