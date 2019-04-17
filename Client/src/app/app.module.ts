@@ -32,6 +32,7 @@ import { ActorDeleteComponent } from './actor/actor-delete/actor-delete.componen
 import { MovieDetailComponent } from './movie/movie-detail/movie-detail.component';
 import { MovieDeleteComponent } from './movie/movie-delete/movie-delete.component';
 import { MovieEditComponent } from './movie/movie-edit/movie-edit.component';
+import { MovieAddComponent } from './movie/movie-add/movie-add.component';
 
 
 
@@ -55,6 +56,7 @@ import { MovieEditComponent } from './movie/movie-edit/movie-edit.component';
     MovieDetailComponent,
     MovieDeleteComponent,
     MovieEditComponent,
+    MovieAddComponent,
     
    
   ],

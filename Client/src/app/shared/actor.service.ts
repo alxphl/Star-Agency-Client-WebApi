@@ -14,7 +14,6 @@ export class ActorService {
 
 
   getActor(id:number){
-//console.log(this.http.get(this.rootURL + '/Actors/' + id).toPromise());
      return this.http.get(this.rootURL + '/Actors/' + id);
   
   }

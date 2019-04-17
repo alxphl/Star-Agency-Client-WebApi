@@ -14,6 +14,7 @@ import { ActorDeleteComponent } from './actor/actor-delete/actor-delete.componen
 import { MovieDetailComponent } from './movie/movie-detail/movie-detail.component';
 import { MovieDeleteComponent } from './movie/movie-delete/movie-delete.component';
 import { MovieEditComponent } from './movie/movie-edit/movie-edit.component';
+import { MovieAddComponent } from './movie/movie-add/movie-add.component';
 
 const routes: Routes =[
   { path: '', redirectTo: '/actors', pathMatch: 'full' },
@@ -24,6 +25,7 @@ const routes: Routes =[
   {path:'actors/delete/:id',component:ActorDeleteComponent,canActivate:[AuthGuard]},
   { path: 'contact', component: ContactComponent },
   { path: 'movie-list', component: MovieComponent,canActivate:[AuthGuard] },
+  { path: 'movie-list/add', component: MovieAddComponent,canActivate:[AuthGuard] },
   { path: 'movie-list/:id', component: MovieDetailComponent,canActivate:[AuthGuard] },
   { path: 'movie-list/delete/:id', component: MovieDeleteComponent,canActivate:[AuthGuard] },
   { path: 'movie-list/edit/:id', component: MovieEditComponent,canActivate:[AuthGuard] },

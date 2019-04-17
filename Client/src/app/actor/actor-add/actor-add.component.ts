@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import {ToastrService} from'ngx-toastr';
 import { ActorService } from '../../shared/actor.service';
-import{Actor} from'../../shared/actor.model';
-import { ActivatedRoute, Params, Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-actor-add',
   templateUrl: './actor-add.component.html',
@@ -32,6 +31,7 @@ export class ActorAddComponent implements OnInit {
         Name:'',
         Link:'',
         Year:0,
+        ActorId:0
        
      
       }]
@@ -50,7 +50,7 @@ export class ActorAddComponent implements OnInit {
     this.service.postActorDetail().subscribe(
       res => {
         debugger;
-    //    this.resetForm(form);
+
         this.toastr.success('Submitted successfully', 'Actor has been registered inside DataBase');
         this.service.refreshList();
       },
@@ -61,16 +61,7 @@ export class ActorAddComponent implements OnInit {
     )
   }
   updateRecord(form: NgForm) {
-    this.service.putActorDetail()/*.subscribe(
-      res => {
-        this.resetForm(form);
-        this.toastr.info('Submitted successfully', 'Actor has been updated inside DataBase');
-        this.service.refreshList();
-      },
-      err => {
-        console.log(err);
-     
-    )
-  } */}
+    this.service.putActorDetail()
+  }
 
 }
