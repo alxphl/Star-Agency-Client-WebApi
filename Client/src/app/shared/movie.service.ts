@@ -1,13 +1,13 @@
 import { Injectable } from '@angular/core';
 import { Movie } from './movie.model';
 import { HttpClient } from '@angular/common/http';
-
+import { Api_Key } from 'ApiKey';
 @Injectable({
   providedIn: 'root'
 })
 export class MovieService {
   formData: Movie;
-  readonly rootURL = 'http://localhost:51624/api';
+  readonly rootURL =Api_Key;
   list : Movie[];
 
   constructor(private http: HttpClient) { }

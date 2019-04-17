@@ -20,10 +20,10 @@ namespace WebApi.xUnitTests
 
             var dbContext = DbContextMocker.GetActorDetailContext(nameof(TestGetNotFound));
             var controller = new MoviesController(dbContext);
-
+            var Id = 5000;
             // Act
 
-            var notFoundResult = controller.GetMovie(278);
+            var notFoundResult = controller.GetMovie(Id);
             dbContext.Dispose();
 
             // Assert
@@ -98,11 +98,14 @@ namespace WebApi.xUnitTests
 
             // Act
             var response = await controller.PostMovie(movie);
-            var ActorResult = controller.GetMovie(155);
+            var MovieResult = controller.GetMovie(movie.Id);
             dbContext.Dispose();
 
             // Assert
-            Assert.Equal(ActorResult.Result.Value.Id, movie.Id);
+            Assert.NotNull(response);
+            Assert.NotNull(MovieResult);
+
+           
         }
         [Fact]
         public async Task TestMovieUpdate()
@@ -110,12 +113,12 @@ namespace WebApi.xUnitTests
             // Arrange
             var dbContext = DbContextMocker.GetActorDetailContext(nameof(TestMovieUpdate));
             var controller = new MoviesController(dbContext);
-            var movie = new Movie() { Name = "Test", ActorId = 5, Link = "movies/Test/TEstMovie", Year = 2020 };
-            var MovieResultBefore = controller.GetMovie(0);
+            var movie = new Movie() {Id = 0,Name = "Test", ActorId = 5, Link = "movies/Test/TEstMovie", Year = 2020 };
+            var MovieResultBefore = controller.GetMovie(movie.Id);
             // Act
-            var response = await controller.PutMovie(0, movie);
+            var response = await controller.PutMovie(movie.Id, movie);
         
-            var MovieResultAfter = controller.GetMovie(0);
+            var MovieResultAfter = controller.GetMovie(movie.Id);
             dbContext.Dispose();
 
             // Assert

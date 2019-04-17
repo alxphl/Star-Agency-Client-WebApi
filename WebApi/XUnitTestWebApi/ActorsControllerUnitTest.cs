@@ -22,10 +22,10 @@ namespace WebApi.xUnitTests
     
         var dbContext  = DbContextMocker.GetActorDetailContext(nameof(TestGet));
         var controller = new ActorsController(dbContext, _log);
-
+            var Id = 5000;
             // Act
 
-            var notFoundResult = controller.Get(278);
+            var notFoundResult = controller.Get(Id);
             dbContext.Dispose();
 
             // Assert
@@ -42,10 +42,10 @@ namespace WebApi.xUnitTests
 
             var dbContext = DbContextMocker.GetActorDetailContext(nameof(TestGet));
             var controller = new ActorsController(dbContext, _log);
-
+           var Id = 1;
             // Act
 
-            var ActorResult = controller.Get(1);
+            var ActorResult = controller.Get(Id);
             dbContext.Dispose();
 
             // Assert
@@ -81,11 +81,13 @@ namespace WebApi.xUnitTests
 
             // Act
             var response = await controller.Create(actor);
-            var ActorResult = controller.Get(29);
-            dbContext.Dispose();
+            var ActorResult = controller.Get(actor.Id);
+          //  dbContext.Dispose();
 
             // Assert
-            Assert.Equal(ActorResult.Result.Value,actor);
+            Assert.NotNull(response);
+            Assert.NotNull(ActorResult);
+
         }
         [Fact]
         public async Task TestUpdate()
@@ -93,12 +95,12 @@ namespace WebApi.xUnitTests
             // Arrange
             var dbContext = DbContextMocker.GetActorDetailContext(nameof(TestDelete));
             var controller = new ActorsController(dbContext, _log);
-            var actor = new Actor() { Id=7 , Name = "Test", Biography = "TestBio", Gender = "f", ImagePath = "image/test.test" };
-            var ActorResultBefore = controller.Get(0);
+            var actor = new Actor() { Id=0 , Name = "Test", Biography = "TestBio", Gender = "f", ImagePath = "image/test.test" };
+            var ActorResultBefore = controller.Get(actor.Id);
             // Act
-            var response = await controller.Update(0,actor);
+            var response = await controller.Update(actor.Id, actor);
 
-            var ActorResultAfter = controller.Get(0);
+            var ActorResultAfter = controller.Get(actor.Id);
             dbContext.Dispose();
 
             // Assert

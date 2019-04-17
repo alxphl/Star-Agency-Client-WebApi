@@ -1,16 +1,14 @@
 import { Injectable } from '@angular/core';
 import { FormBuilder, Validators, FormGroup } from '@angular/forms';
-import {HttpClient, HttpHeaders} from '@angular/common/http';
-import { from } from 'rxjs';
-import { htmlAstToRender3Ast } from '@angular/compiler/src/render3/r3_template_transform';
-
+import {HttpClient} from '@angular/common/http';
+import { Api_Key } from 'ApiKey';
 @Injectable({
   providedIn: 'root'
 })
 export class UserService {
 
   constructor(private fb:FormBuilder,private http:HttpClient) { }
-  readonly BaseURL="http://localhost:51624/api";
+  readonly BaseURL=Api_Key;
 
   formModel=this.fb.group({
     UserName:['',Validators.required],

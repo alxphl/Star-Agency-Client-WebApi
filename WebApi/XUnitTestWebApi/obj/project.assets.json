@@ -10182,9 +10182,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Actors\\StarAgency\\WebApi\\XUnitTestWebApi\\WebApi.xUnitTests.csproj",
-      "projectName": "WebApi.xUnitTests",
-      "projectPath": "D:\\Actors\\StarAgency\\WebApi\\XUnitTestWebApi\\WebApi.xUnitTests.csproj",
+      "projectUniqueName": "D:\\Actors\\StarAgency\\WebApi\\XUnitTestWebApi\\WebApi.xUnit.IntegrationTests.csproj",
+      "projectName": "WebApi.xUnit.IntegrationTests",
+      "projectPath": "D:\\Actors\\StarAgency\\WebApi\\XUnitTestWebApi\\WebApi.xUnit.IntegrationTests.csproj",
       "packagesPath": "C:\\Users\\Developer\\.nuget\\packages\\",
       "outputPath": "D:\\Actors\\StarAgency\\WebApi\\XUnitTestWebApi\\obj\\",
       "projectStyle": "PackageReference",

@@ -1,5 +1,4 @@
 import { Movie } from './movie.model';
-import { Photo } from './photo.model';
 
 export class Actor{
     Id:number;

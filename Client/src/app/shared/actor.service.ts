@@ -1,13 +1,15 @@
 import { Injectable } from '@angular/core';
 import { Actor } from './actor.model';
 import { HttpClient } from '@angular/common/http';
+import { Api_Key } from 'ApiKey';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ActorService {
   formData: Actor;
-  readonly rootURL = 'http://localhost:51624/api';
+ 
+  readonly rootURL=Api_Key; 
   list : Actor[];
 
   constructor(private http: HttpClient) { }
